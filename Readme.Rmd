@@ -1,0 +1,25 @@
+=====================================
+Tidy Data dataset based on Human Activity Recognition Using Smartphones
+Version 1.0
+=====================================
+
+The dataset is based on the data from the Human Activity Recognition Using Smartphones data. Experiments have been carried out with a group of 30 volunteers. Each person performed six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) wearing a smartphone (Samsung Galaxy S II) on the waist. Using its embedded accelerometer and gyroscope, we captured 3-axial linear acceleration and 3-axial angular velocity at a constant rate of 50Hz.
+
+=====================================
+
+This repo contains 2 following files.
+
+- run_analysis.R - The R scrip that contains the analysis
+- CodeBook.md - document that describes the variables, data, and transformations
+
+=====================================
+
+Analysis steps
+
+- All of the relevant data files were read into data frames.
+- Column names were added
+- All feature columns that did not contain the exact string "mean" or "std" were removed. The subjectID and activity columnswere maintained.
+- The training and test sets were combined into a single data set.
+- A tidy data set was created containing the mean of each feature for each subject and each activity.
+- The tidy data set was output to a txt file.
+
